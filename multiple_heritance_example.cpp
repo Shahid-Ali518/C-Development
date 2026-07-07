@@ -139,5 +139,14 @@ int main(){
     cout << "Manager Salary: $" << m1.getSalary() << endl;
     cout << "Manager Team Size: " << m1.getTeamSize() << endl;
 
-    return 0;
+    Person* p = new Manager("Bob", 40, "InnovateInc", 150000.0, 15); // Using base class pointer to derived class object
+    cout << "Manager Name: " << p->getName() << endl;
+
+    //Manager* m2 = new Person("Charlie", 45); // Using derived class pointer to base class object, // this will cause a compilation error because you cannot assign a base class object to a derived class pointer.
+
+    Person P("Charlie", 45); // Using base class object
+
+    // Person p = ("David", 50
+
+    return 0;   
 }
